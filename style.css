@@ -134,5 +134,16 @@ p {
 .site-footer a {
     color: #aaa;
     text-decoration: none;
-    padding-right: 24px;
+}
+
+.footer-column {
+    display: flex;
+    align-items: center;
+    gap: 16px; 
+    flex-wrap: wrap;
+}
+
+.footer-column img {
+    height: 40px;
+    width: auto;
 }
