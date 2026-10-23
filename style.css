@@ -1,9 +1,65 @@
+@font-face {
+  font-family: "Saira"; /* set name */
+  src: url(fonts/Saira-VariableFont_wdth,wght.ttf); /* url of the font */
+}
+
+@font-face {
+    font-family: "Babas";
+    src: url(./fonts/BebasNeue-Regular.ttf);
+}
+
+.logo img{
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 1; 
+}
+
+
 body {
     background-color: #add8e6;
+    display: flex;
+    flex-direction: column;
 }
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.section h1 {
+    font-family: "Babas", serif;
+}
+
+
+.main-header nav a {
+    color: #ff0000;
+    text-decoration: none;
+    padding-right: 24px;
+}
+
+
 
 #xavheader {
     color: #ff0000;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+
+p {
+    font-family: "Saira", serif;
 }
 
 .join {
@@ -21,5 +77,62 @@ body {
 
 .section {
     background-color: yellow;
-    padding: 5px;
+    padding: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.warning {
+    background-color: #ff0000;
+    padding: 10px;
+    margin: 10px;
+}
+
+.imp {
+  position: relative;
+  display: inline-block;
+  color: #ff0000;
+  text-decoration: none;
+  padding-bottom: 4px;
+  background: 
+    linear-gradient(to right, #8B0000, red, #8B0000),
+    linear-gradient(to right, #00008B, blue, #00008B);
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.imp:hover,
+.imp:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+
+.warning .imp {
+    color: #FFD700
+}
+
+.warning h2 {
+    color: #191970;
+}
+
+.warning h2 .imp{
+    color: #FFFDD0;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #aaa;
+    padding: 1.5rem 2rem;
+    margin-top: auto;
+}
+
+.site-footer a {
+    color: #aaa;
+    text-decoration: none;
+    padding-right: 24px;
 }
