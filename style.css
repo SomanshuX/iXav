@@ -108,6 +108,9 @@ p {
   background-size: 0 0.1em, 100% 0.1em;
 }
 
+.warning p {
+    color: white;
+}
 
 .warning .imp {
     color: #FFD700
@@ -118,7 +121,7 @@ p {
 }
 
 .warning h2 .imp{
-    color: #FFFDD0;
+    color: #220543ce;
 }
 
 .site-footer {
